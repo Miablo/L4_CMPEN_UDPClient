@@ -4,6 +4,11 @@ import java.net.SocketTimeoutException;
 import java.net.UnknownHostException;
 import java.util.Date;
 
+/**
+ * UDPClient class acts as client sending messages to UDPServer
+ * @version 1.0
+ * @author Mio Diaz && Lab Manual provided
+ */
 public class UDPClient extends PingClient{
     /** Host to ping */
     String remoteHost;
@@ -139,6 +144,11 @@ public class UDPClient extends PingClient{
         replies[pingNumber] = true;
 
         /* Calculate RTT and store it in the rtt-array. */
+        Date now = new Date();
+        long newtime = now.getTime();
+        long rttVal = newtime - oldtime;
+        rtt[pingNumber] = rttVal;
+
         numReplies++;
 
     }
