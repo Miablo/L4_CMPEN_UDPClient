@@ -41,6 +41,10 @@ public class UDPClient extends PingClient{
         this.remotePort = port;
     }
 
+    /**
+     * Main
+     * @param args arg1 is host, arg2 is port number
+     */
     public static void main(String[] args) {
         String host = null;
         int port=0;

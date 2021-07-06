@@ -2,7 +2,7 @@ import java.io.IOException;
 import java.net.*;
 
 /**
- * PingClient
+ * PingClient.java
  */
 public class PingClient {
     /** Socket which we use. */
